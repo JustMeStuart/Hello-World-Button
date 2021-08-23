@@ -28,10 +28,13 @@ namespace Hello_World_Button
             this.InitializeComponent();
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private async void button_Click(object sender, RoutedEventArgs e)
         {
             MessageDialog dialog = new MessageDialog("Hello World");
-            dialog.ShowAsync();
+            await dialog.ShowAsync();
+
+            MessageDialog Seclog = new MessageDialog("I Am");
+            Seclog.ShowAsync();
         }
     }
 }
